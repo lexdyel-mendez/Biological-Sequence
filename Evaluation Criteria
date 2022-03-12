@@ -1,0 +1,24 @@
+Evaluation Criteria
+
+Task                                                        |   %  |
+|-----------------------------------------------------------|------|
+The program must take 1 csv file as input via command       |      |
+line (No prompt, or special inputs are needed since the     |   10 |
+program will be graded automatically)                       |      |
+|-----------------------------------------------------------|------|
+The program must create the results.csv file                |      |
+automatically with the 4 columns headings as                |   10 |
+established in the instructions.	                        |      |
+|-----------------------------------------------------------|------|
+On-time delivery	                                        |   15 |
+|-----------------------------------------------------------|------|
+Followed Instructions	                                    |   10 |
+|-----------------------------------------------------------|------|
+Code documentation	                                        |    5 |
+|-----------------------------------------------------------|------|
+Dynamic Programming Implementation (This will be            |   20
+determined by the professor)	                            |      |
+|-----------------------------------------------------------|------|
+Algorithm Accuracy (This will be determined and             |   30 |
+calculated by the professor)	                            |      |
+|-----------------------------------------------------------|------|

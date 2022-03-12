@@ -1,0 +1,29 @@
+Instructions
+
+   * The Goal of project one is to implement your own Needleman-Wunsch algorithm using Dynamic Programing.
+        - As scoring matrix, the algorithm must use the following:
+            + Reward on a match: 1
+            + Penalty on a mismatch: -1
+            + Gap penalty: -2
+   * Your program must take 1 file as input.
+        - Example: python <your_program> input_file.csv
+        - The input file name must not be hardcoded, it must take whatever input file the professor passes as input on whatever location.  It must not assume the file is on the local directory.
+   * The input comma-separated file will contain 2 columns: sequence1 and sequence2.  Your program will need to calculate the Needlemanch-Wunch alignment for each of the 2 sequences in the input file.
+   * Your program must create a results file (must be called results.csv) that will contain the following:
+        - 4 columns
+            + sequence1
+            + sequence2
+            + alignment text
+            + alignment score
+        - The alignment text must be of the form:
+            + ATGCT
+            + A-GCT
+   * The application can be developed in Python (preferred) or Java.  If python is used, stick to the 3.7 version.
+   * The application will be handled by e-mail to the professor with the following subject: "Project 1: Sequence Alignment Code".
+        - Only the file with the code is needed.  No Environments, no libraries, no outputs, no inputs.
+   * The Professor will run your code with his own files and will validate your implementation.
+   * The Rubric in this section contains the specific criteria on how the project will be graded.
+   * Code must be documented appropriately.
+   * The code must be delivered no later than Saturday, March 19, 2022, 23:59.
+
+   \Last modified: Monday, 21 February 2022, 11:59 AM
