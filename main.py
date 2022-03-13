@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import sys
+import csv
 
 
 def data_extraction(filepath: str, type='np'):
@@ -70,8 +72,35 @@ def needlemanWunsch(seqA: str, seqB: str):
                                 sc_mtrx[i][j - 1] + d,
                                 sc_mtrx[i - 1][j] + d)
 
-    return sc_mtrx
+    scoring = sc_mtrx[n-1][m-1]
+    return sc_mtrx, scoring
+
+def backtracking(matrix):
+    #TODO - Make algorithm that will backtrack through matrix an generate the Sequence Alignment
+    return "Empty"
+
+def feeder(data):
+    header = ["Sequence 1", "Sequence 2", "Alignment Text", "Alignment Score"]
+    with open('results.csv', 'w', newline='', encoding='UTF8') as f:
+        writer = csv.writer(f)
+        writer.writerow(header)
+        for (seqA, seqB) in data:
+            final_matrix, alignment_score = needlemanWunsch(seqA, seqB)
+            alignment_text = backtracking(final_matrix)
+            new_data = [seqA, seqB, alignment_text, alignment_score]
+            writer.writerow(new_data)
+        f.close()
 
 
 if __name__ == '__main__':
-    needlemanWunsch(s1, s2)
+    # final_matrix, align_score = needlemanWunsch(s1, s2)
+
+    # print('Align Score:',align_score)
+
+    # filename = sys.argv[1]
+    # print(filename)
+    filename = 'input.csv'
+    data = data_extraction(filename)
+    feeder(data)
+
+    print('End Testing')
